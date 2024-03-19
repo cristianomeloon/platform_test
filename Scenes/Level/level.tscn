@@ -1,0 +1,83 @@
+[gd_scene load_steps=4 format=3 uid="uid://drgl2gt4rj5wp"]
+
+[ext_resource type="PackedScene" uid="uid://qv3umu7jkbpn" path="res://Scenes/Player/player.tscn" id="2_sivf4"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_fousx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vskrf"]
+size = Vector2(757.5, 222)
+
+[node name="Level" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(379.5, 540)
+scale = Vector2(757, 222)
+texture = SubResource("PlaceholderTexture2D_fousx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(379.75, 540)
+shape = SubResource("RectangleShape2D_vskrf")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="."]
+position = Vector2(-774, -2)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D5"]
+position = Vector2(379.5, 540)
+scale = Vector2(757, 222)
+texture = SubResource("PlaceholderTexture2D_fousx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
+position = Vector2(379.75, 540)
+shape = SubResource("RectangleShape2D_vskrf")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(430, -109)
+rotation = 1.5708
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
+position = Vector2(379.5, 540)
+scale = Vector2(757, 222)
+texture = SubResource("PlaceholderTexture2D_fousx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(379.75, 540)
+shape = SubResource("RectangleShape2D_vskrf")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(42, -111)
+rotation = 1.5708
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D4"]
+position = Vector2(379.5, 540)
+scale = Vector2(757, 222)
+texture = SubResource("PlaceholderTexture2D_fousx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2(379.75, 540)
+shape = SubResource("RectangleShape2D_vskrf")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(402, 125)
+rotation = -0.523599
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D3"]
+modulate = Color(0.329412, 0.729412, 0.941176, 1)
+position = Vector2(379.5, 540)
+scale = Vector2(757, 222)
+texture = SubResource("PlaceholderTexture2D_fousx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(379.75, 540)
+shape = SubResource("RectangleShape2D_vskrf")
+
+[node name="Player" parent="." instance=ExtResource("2_sivf4")]
+position = Vector2(256, 390)
